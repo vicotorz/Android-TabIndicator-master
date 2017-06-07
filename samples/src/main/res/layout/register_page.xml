@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text="用户注册"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        android:typeface="sans" />
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="wrap_content"
+        android:layout_height="181dp"
+        android:layout_margin="15dip"
+        android:layout_weight="0.77"
+        android:padding="15dip">
+
+
+        <TextView
+            android:id="@+id/login_user_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:text="@string/user"
+            android:textSize="16dp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/user_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_user_input"
+            android:layout_alignStart="@+id/login_user_input"
+            android:layout_below="@+id/login_user_input"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/hint_user"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/login_pass_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_input"
+            android:layout_margin="5dp"
+            android:text="@string/pass"
+            android:textSize="16dp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/pass_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_pass_input"
+            android:layout_alignStart="@+id/login_pass_input"
+            android:layout_below="@+id/login_pass_input"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/hint_pass"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/re_login_pass_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/re_pass_input"
+            android:layout_alignStart="@+id/re_pass_input"
+            android:layout_centerVertical="true"
+            android:text="重新输入"
+            android:textSize="16dp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/re_pass_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_pass_input"
+            android:layout_alignStart="@+id/login_pass_input"
+            android:layout_below="@+id/re_login_pass_input"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/hint_pass"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/re_pass_input"
+            android:layout_marginTop="35dp"
+            android:text="@string/sex"
+            android:textSize="16dp"
+            android:typeface="sans" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/re_pass_input"
+            android:layout_alignRight="@+id/re_pass_input"
+            android:layout_below="@+id/re_pass_input"
+            android:layout_toEndOf="@+id/re_login_pass_input"
+            android:layout_toRightOf="@+id/re_login_pass_input">
+
+            <!--注意这里的radioGroup需要包括进RdioButton之中-->
+            <!--男-->
+
+            <!--女-->
+            <RadioButton
+                android:id="@+id/sex_chmen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/re_pass_input"
+                android:layout_toEndOf="@+id/re_login_pass_input"
+                android:layout_toRightOf="@+id/re_login_pass_input"
+                android:text="@string/men" />
+
+            <RadioButton
+                android:id="@+id/sex_chwomen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sex_chmen"
+                android:layout_toRightOf="@+id/re_login_pass_input"
+                android:text="@string/women" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sex_chwomen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sex_chwomen"
+        android:layout_gravity="center_horizontal"
+        android:text="注册"></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/new_user"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:autoLink="web"-->
+        <!--android:text="@string/new_user"-->
+        <!--android:layout_marginLeft="60dp"-->
+        <!--android:layout_weight="0.04" />-->
+    </LinearLayout>
+
+</LinearLayout>

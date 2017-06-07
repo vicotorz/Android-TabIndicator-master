@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!-- TableLayout要熟练掌握 ( 重新整理 )-->
+    <TableLayout
+        android:id="@+id/table0"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:shrinkColumns="1"
+        android:stretchColumns="*" >
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="10dp"
+                android:layout_weight="1"
+                android:text="2016年主题 Beatles"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/table0"
+        android:shrinkColumns="1,2,3"
+        android:stretchColumns="*" >
+        <TableRow>
+
+            <Button
+                android:id="@+id/first_station"
+                android:layout_width="10dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="第一站"
+                android:textColor="#000000"
+                android:radius="50dp"
+                />
+
+            <Button
+                android:id="@+id/second_station"
+                android:layout_width="10dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="第二站"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/third_station"
+                android:layout_width="10dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="第三站"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/forth_station"
+                android:layout_width="10dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="第四站"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/fifth_station"
+                android:layout_width="10dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="第五站"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/sixth_station"
+                android:layout_width="10dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="第六站"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/seventh_station"
+                android:layout_width="15dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="第七站"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

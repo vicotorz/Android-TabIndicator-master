@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionOverflowButtonStyle">@style/weixinActionOverflowButtonStyle</item>
+        <item name="android:toolbarStyle">@style/ActionBarStyleDesign</item>
+         <item name="colorPrimary">#FF6A6A</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="weixinActionOverflowButtonStyle">
+        <item name="android:src">@drawable/ic_btn_round_more_disabled</item>
+    </style>
+
+    <!--设置actionbar的风格-->
+    <style name="ActionBarStyleDesign">
+        <item name="background">@drawable/bg_action_bar</item>
+        <item name="titleTextStyle">@style/ActionBarTitleStyle</item>
+    </style>
+
+    <!--设置actionbar上的字体-->
+    <style name="ActionBarTitleStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>
