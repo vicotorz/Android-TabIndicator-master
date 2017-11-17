@@ -1,110 +1,51 @@
+actionbar和Toolbar区别
 
-# TabIndicator for Android
-**[English](https://github.com/xuehuayous/Android-TabIndicator)** **[中文](https://github.com/xuehuayous/Android-TabIndicator/blob/master/README-zh.md)**
+actionbar渐变色
+toolbar渐变色    style中设置
 
-Tab Indicator is a powerful bottom navigation widget, It provides some configuration options and good control the appearance and operational requirements.
+actionbar上显示 search_view
+search_view显示图标，不显示文字
 
-**simple example**  
-![TabIndicator Simple Demo](https://raw.githubusercontent.com/xuehuayous/Android-TabIndicator/master/tab_indicator_sample.gif)
+fab中一些子选项图标，需要修改
 
-**Page navigation example**  
-![TabIndicator Simple Demo](https://raw.githubusercontent.com/xuehuayous/Android-TabIndicator/master/tab_page_indicator_sample.gif)
+Error:Execution failed for task ':app:processDebugResources'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command 'D:\AppData\Local\Android\sdk\build-tools\23.0.2\aapt.exe'' finished with non-zero exit value 1
 
-**Enhanced Page navigation example**   
-![TabIndicator Simple Demo](https://raw.githubusercontent.com/xuehuayous/Android-TabIndicator/master/tab_page_indicator_ex_sample.gif)
+Error:Execution failed for task ':samples:compileDebugJavaWithJavac'.
+> java.io.FileNotFoundException: C:\Users\dell\Desktop\Android-TabIndicator-master\build\generated\mysql-connector-java-5.1.18-bin.jar (系统找不到指定的文件。)
+(可能jar包放置错误)
 
-## Using TabIndicator in your application
-
-If you are building with Gradle, simply add the following line to the `dependencies` section of your `build.gradle` file:
-
-```
-	compile 'com.kevin:tabindicator:1.0.2'
-```
-
-## Simple Usage ##
-
-### Configured as View in layout.xml ###
-To add the LoopView to your application, specify `com.kevin.tabindicator.TabIndicator` in your layout XML.
-
-    <com.kevin.tabindicator.TabIndicator
-        android:id="@+id/tab_indicator_act_ti"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/tabbg"
-        kevin:tabSelectedColor="#3F51B5"
-        kevin:tabSelectedIcons="@array/qq_selected_icon"
-        kevin:tabTextSize="12sp"
-        kevin:tabUnselectedColor="#555555"
-        kevin:tabUnselectedIcons="@array/qq_normal_icon" />
-
-### Configured Programmatically ###
-
-	TabIndicator mTabIndicator = (TabIndicator) this.findViewById(R.id.tab_indicator_act_ti);
-    mTabIndicator.setOnTabSelectedListener(new TabPageIndicatorEx.OnTabSelectedListener() {
-
-        @Override
-        public void onTabSelected(int index) {
-            mTextView.setText("Page"+(index+1));
-            }
-        });
-
-## More configuration Usage ##
-
-### XML Usage ###
-
-If you decide to use TabIndicator as a view, you can define it in your xml layout like this:
-
-    <declare-styleable name="TabIndicator">
-        <!-- Icon array, application in a single icon gradient -->
-        <attr name="tabIcons" format="reference" />
-        <!-- Selected icon array -->
-        <attr name="tabSelectedIcons" format="reference" />
-        <!-- unselected icon array -->
-        <attr name="tabUnselectedIcons" format="reference" />
-        <!-- Text array -->
-        <attr name="tabLabels" format="reference" />
-        <!-- Selected color -->
-        <attr name="tabSelectedColor" format="reference|color" />
-        <!-- unselected color -->
-        <attr name="tabUnselectedColor" format="reference|color" />
-        <!-- Text font size -->
-        <attr name="tabTextSize" format="dimension" />
-        <!-- The item padding -->
-        <attr name="tabItemPadding" format="dimension" />
-        <!-- Whether the gradient switch -->
-        <attr name="tabGradualChange" format="boolean" />
-        <!-- Indicator size -->
-        <attr name="TabIndicatorSize" format="dimension" />
-    </declare-styleable>
-
-### Programme Usage ###
-
-	// set ViewPager
-    mTabPageIndicatorEx.setViewPager(mViewPager);
-	// Setting specifies the position indicator to show whether or not the point
-    mTabPageIndicatorEx.setIndicateDisplay(2, true);
-	// Monitor switch settings
-    mTabPageIndicatorEx.setOnTabSelectedListener(new TabPageIndicatorEx.OnTabSelectedListener() {
-
-        @Override
-        public void onTabSelected(int index) {
-                mViewPager.setCurrentItem(index, false);
-        }
-    });
+The specified child already has a parent. You must call removeView() on the child's parent first
 
 
-## License
+android的本地页面显示
 
-    Copyright 2015 Kevin zhou
+去掉红色标点提示
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+listView和Fragment
 
-       http://www.apache.org/licenses/LICENSE-2.0
+Android studio加载本地html的文档问题  
+【！！梳理思路！！】onCreate  onCreateView
+加载本地html
+本地html怎么加载图片？？
+关于我们的dialog重新设计
+连接数据库
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+Can't resolve symbal R  html标签错误会导致R文件不能识别
+
+toolbar与Fragment之间没有间隔
+
+美化tab，美化背景
+tab显示问题      tabhost与viewpager互相分开，所以显示不同步
+设置fragment和adapter的代码优化问题
+
+list显示不下过多的text
+expanedListView美化问题
+
+数据库连接--后台的构建
+
+第一面的imageButton构建
+
+注册页面提示，android页面提示
+
+android stuido加载jar文件 http://jingyan.baidu.com/album/e6c8503c7190b7e54f1a1893.html?picindex=2
