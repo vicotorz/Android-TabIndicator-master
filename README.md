@@ -4,16 +4,15 @@
 * toolbar渐变色（style中设置）
 * actionbar上显示 search_view
 * search_view显示图标，不显示文字
+* fab中一些子选项图标，需要修改
+>
+>  Error:Execution failed for task ':app:processDebugResources'.
+>  com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command 'D:\AppData\Local      >  \Android\sdk\build-tools\23.0.2\aapt.exe'' finished with non-zero exit value 1
+>
 
-fab中一些子选项图标，需要修改
 >
-  Error:Execution failed for task ':app:processDebugResources'.
-  com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command 'D:\AppData\Local      \Android\sdk\build-tools\23.0.2\aapt.exe'' finished with non-zero exit value 1
->
-
->
-  Error:Execution failed for task ':samples:compileDebugJavaWithJavac'.
-  java.io.FileNotFoundException: C:\Users\dell\Desktop\Android-TabIndicator-master\build\generated\mysql-connector-java-5.1.18-bin.jar (系统找不到指定的文件。)
+>  Error:Execution failed for task ':samples:compileDebugJavaWithJavac'.
+>  java.io.FileNotFoundException: C:\Users\dell\Desktop\Android-TabIndicator-master\build\generated\mysql-connector-java-5.1.18-bin.jar (系统找不到指定的文件。)
 >
 ** 可能jar包放置错误
 
