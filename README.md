@@ -14,6 +14,7 @@
 >  Error:Execution failed for task ':samples:compileDebugJavaWithJavac'.
 >  java.io.FileNotFoundException: C:\Users\dell\Desktop\Android-TabIndicator-master\build\generated\mysql-connector-java-5.1.18-bin.jar (系统找不到指定的文件。)
 >
+
 ** 可能jar包放置错误
 
 * The specified child already has a parent. You must call removeView() on the child's parent first
